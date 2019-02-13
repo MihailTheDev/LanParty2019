@@ -1,0 +1,20 @@
+{
+  "name": "lanparty2019",
+  "version": "1.0.0",
+  "description": "Hai la munca baietii",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch sass/index.scss:build/index.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J0ck3rul/LanParty2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J0ck3rul/LanParty2019/issues"
+  },
+  "homepage": "https://github.com/J0ck3rul/LanParty2019#readme"
+}

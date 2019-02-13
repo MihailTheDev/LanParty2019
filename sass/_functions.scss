@@ -1,0 +1,7 @@
+/*----------------------
+Get integer from unit size
+/// @param {Unit} $n - Initial Unit
+-----------------------*/
+@function parseVal($n) {
+  @return $n / ($n * 0 + 1);
+}

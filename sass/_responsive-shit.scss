@@ -1,0 +1,94 @@
+
+/* partea oblica */
+@media screen and (max-height: 670px) {
+  .promo {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .promo {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  }
+}
+/* renuntat de la imagine pt oblicitate */
+@media screen and (max-width: 744px) {
+  #eroi-div {
+    display: none;
+  }
+  #fun {
+    display: none;
+  }
+  #fun-mobile {
+    position: relative !important;
+    left: 0px !important;
+  }
+  #soldatel-dreapta {
+    display: none;
+  }
+  #soldatel-stanga {
+    left: -10%;
+    padding-right: 0px !important;
+  }
+  #coordonator {
+    right: -15% !important;
+  }
+  .btn-1 {
+    right: -10%;
+  }
+}
+/* imaginea de la competitive */
+@media screen and (max-width: 1136px) {
+  #competitiv {
+    display: none;
+  }
+  #competitiv-mobile {
+    position: relative !important;
+    left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  #nexus {
+    display: none;
+  }
+  #harta {
+    right: 0%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #coordonator {
+    right: -5%;
+  }
+}
+/* detalii */
+#competitiv-mobile {
+  position: absolute;
+  left: 50000px;
+  display: none;
+}
+#fun-mobile {
+  position: absolute;
+  left: 500000px;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #btn-jmk {
+    padding: 10px 12px !important;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #btn-jmk {
+    padding: 6px 8px !important;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #btn-jmk {
+    padding: 2px 4px !important;
+    font-size: 17px;
+  }
+}

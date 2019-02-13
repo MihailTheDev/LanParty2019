@@ -1,229 +1,269 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/oblic.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive-shit.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <link href="build/index.css" rel="stylesheet">
+
     <title>Lan Party</title>
-    <script src="js/header.js"></script>
 </head>
 
 <body>
 
-    <div class="row-1" id="div1">
-        </br>
-        <div class="topnav text-center mx-auto" id="myTopnav">
+<div class="mobile-navbar">
+    <div class="mobile-navbar__info">
+        <a class="mobile-navbar__info__logo" href="index.html">
+            <img alt="LanParty" src="build/img/logo.png">
+        </a>
+
+        <div class="mobile-navbar__info__details">
+            <div class="mobile-navbar__info__details__item"><span>LanParty 2018</span></div>
+            <span class="mobile-navbar__info__details__item"><span>24 25 Februarie</span></span>
+            <span class="mobile-navbar__info__details__item"><span>3 Martie</span></span>
+        </div>
+    </div>
+    <div class="mobile-navbar__links">
+        <div class="mobile-navbar__links--main">
+            <a class="mobile-navbar__links--main__link" href="regulament.html">REGULAMENT</a>
+            <a class="mobile-navbar__links--main__link"  href="#div8">CONTACT</a>
+            <a class="mobile-navbar__links--main__button" href="#div8">INSCRIE-TE</a>
+        </div>
+    </div>
+    <div class="mobile-navbar__links--burger nav-burger">
+        <i class="fa fa-times"></i>
+    </div>
+</div>
 
 
-
-
-            <a href="index.html">
-                <img src="css/img/logo.png" alt="LanParty"> </a>
-
-            <span class="my-auto text-white  font-18 mr-5v2 header-font">
-                LanParty 2018| 24 25 Februarie| 3 Martie
-            </span>
-
-            <a href="regulament.html" class="active font-14 ml-5v2 header-font">REGULAMENT</a>
-            <a href="#div8" class="font-14 header-font">CONTACT</a>
-            <a href="#div8" class="font-14 header-font" id="inscriere">INSCRIE-TE</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="burger" onclick="myFunction()">
-                <img src="css/img/burger.png">
+<div class="row__section--bg-inchis" id="div1">
+    <nav class="navbar container">
+        <div class="navbar__info">
+            <a class="navbar__info__logo" href="index.html">
+                <img alt="LanParty" src="build/img/logo.png">
             </a>
 
+            <div class="navbar__info__details">
+                <div class="navbar__info__details__item"><span>LanParty 2018</span></div>
+                <span class="navbar__info__details__item"><span>24 25 Februarie</span></span>
+                <span class="navbar__info__details__item"><span>3 Martie</span></span>
+            </div>
         </div>
-
-
-
-
-
-
-        <div class="row">
-
-            <iframe class="trailer mx-auto my-5 col-xl-7 col-lg-7 col-sm-8 col-9 gradient-border" width="99%" height="45%" src="https://www.youtube.com/embed/Lj_P9suwpU0"
-                frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="navbar__links">
+            <div class="navbar__links--main">
+                <a class="navbar__links--main__link" href="regulament.html">REGULAMENT</a>
+                <a class="navbar__links--main__link"  href="#div8">CONTACT</a>
+                <a class="navbar__links--main__button" href="#div8">INSCRIE-TE</a>
+            </div>
+            <div class="navbar__links--burger nav-burger " style="font-size:15px;">
+                <img src="build/img/burger.png">
+            </div>
         </div>
-        <div class="row" id="text-centrat">
+    </nav>
+    <div class="row">
+
+        <iframe allow="autoplay; encrypted-media" allowfullscreen
+                class="trailer mx-auto my-5 col-xl-7 col-lg-7 col-sm-8 col-9 gradient-border"
+                frameborder="1"
+                height="45%" src="https://www.youtube.com/embed/Lj_P9suwpU0" width="99%"></iframe>
+    </div>
+    <div class="row" id="text-centrat">
 
             <span class="text-white mx-auto font-22 col-xl-6 col-lg-7 col-sm-10 col-10 mb-3" id="under-video">
                 Vino singur sau cu prietenii tai si arata-ne skill-urile tale de gaming. Intr-o atmosfera competitiva. Asii organizeaza o
                 noua editie de LAN party, unde toti pasionatii de jocuri vor castiga premii pe masura.
             </span>
 
+        </span>
+    </div>
+</div>
+<!-- Pana aici am prima parte (navbar + yt video -->
+<div class="row__section--bg-deschis row row__section row__section__event-description promo" id="div2">
+    <div class="row" id="shit-heroes">
+        <div class="col-xl-6 col-lg-5 col-sm-4 col-5 is-center-aligned">
+            <!-- imagine eroi -->
+            <img alt="heroes" class="ml-4" id="eroi" src="build/img/eroi1.png">
+        </div>
+        <div class="col-xl-2 hidden-lg hidden-md hidden-sm hidden-xs"></div>
+        <div class="col-xl-3 col-lg-6 col-sm-8 col-12 mx-2">
+            <div class=" text-white font-24 my-5 align-center" id="title-bitter">
+                Lan Party Iasi 2018
+            </div>
+            <span class="text-white   align-left font-20 line-hight-36">
+                Evenimentul se va desfasura pe parcursul a doua saptamani (in week-end), si va da ocazia participantilor sa isi arate skill-urile
+                la jocuri de tip competitiv CS:GO, DotA 2, HearthStone, sau va oferi o alternativa de a-ti cunoaste colegii
+                mai bine la jocurile de tip For Fun.
             </span>
         </div>
     </div>
-    <!-- Pana aici am prima parte (navbar + yt video -->
-    <div class="row-2 row promo" id="div2">
-        <div class="row" id="shit-heroes">
-            <div class="col-xl-6 col-lg-5 col-sm-4 col-5" id="eroi-div">
-                <!-- imagine eroi -->
-                <img src="css/img/eroi1.png" alt="heroes" id="eroi" class="ml-4">
+    <div class="row " id="mobile-shit">
+        <div class="col-xl-10 col-lg-10 col-sm-10 col-10 mx-2 mx-auto over-heroes">
+            <div class=" text-white font-24 my-5 align-center" id="title-bitter" style="margin-top: 90px!important;">
+                Lan Party Iasi 2018
             </div>
-            <div class="col-xl-2 hidden-lg hidden-md hidden-sm hidden-xs"></div>
-            <div class="col-xl-3 col-lg-6 col-sm-8 col-12 mx-2 over-heroes">
-                <div class=" text-white font-24 my-5 align-center" id="title-bitter">
-                    Lan Party Iasi 2018
-                </div>
-                <span class="text-white   align-left font-20 line-hight-36">
-                    Evenimentul se va desfasura pe parcursul a doua saptamani (in week-end), si va da ocazia participantilor sa isi arate skill-urile
-                    la jocuri de tip competitiv CS:GO, DotA 2, HearthStone, sau va oferi o alternativa de a-ti cunoaste colegii
-                    mai bine la jocurile de tip For Fun.
-                </span>
-
-            </div>
-        </div>
-        <div class="row " id="mobile-shit">
-            <div class="col-xl-10 col-lg-10 col-sm-10 col-10 mx-2 mx-auto over-heroes">
-                <div class=" text-white font-24 my-5 align-center" id="title-bitter" style="margin-top: 90px!important;">
-                    Lan Party Iasi 2018
-                </div>
-                <span class="text-white   align-left font-20 line-hight-36">
+            <span class="text-white   align-left font-20 line-hight-36">
                     Evenimentul se va desfasura pe parcursul a doua saptamani (in week-end), si va da ocazia participantilor sa isi arate skill-urile
                     la jocuri de tip competitiv CS:GO, DotA 2, HearthStone, sau va oferi o alternativa de a-ti cunoaste colegii
                     mai bine la jocurile de tip For Fun.
                 </span>
 
 
-            </div>
-            <div class="col-xl-10 col-lg-10 col-sm-10 col-10" id="eroi-div">
-                <!-- imagine eroi -->
-                <img src="css/img/eroi1.png" alt="heroes" id="eroi" class="ml-4">
-            </div>
+        </div>
+        <div class="col-xl-10 col-lg-10 col-sm-10 col-10 is-center-aligned">
+            <!-- imagine eroi -->
+            <img class="mobile-image" alt="heroes" class="ml-4" src="build/img/eroi1.png">
         </div>
     </div>
+</div>
 
-    <!-- Jocuri competitive -->
-    <div class="row-1" id="div3">
-        <div class="row">
-            <div class="text-center text-white col-xl-12 font-24 pt-jc " id="title-bitter" style="margin-top:75px;margin-bottom: 25px;">
-                Jocuri competitive
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-xl-6 mx-auto mb-4 text-white  font-20 align-center ">
-                Fiecare joc promite multe premii, de la tricouri geeky si medalii, pana la skin-uri si cosmetice in-game. Gotta win 'em all!
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-xl-12 text-white text-center mb-4">
-                <img src="css/img/jc.png" alt="focuri competitive" id="competitiv">
-                <img src="css/img/jc-mobile.png" alt="focuri competitive" id="competitiv-mobile">
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-xl-12 text-center my-5">
-                <a href="regulament.html" class="font-20 header-font topnav" id="btn-jmk">REGULAMENT</a>
-            </div>
+<!-- Jocuri competitive -->
+<div class="row__section--bg-inchis row__section row__section__competitive-games row__section--top-negative-margin">
+    <div class="row">
+        <div class="text-center text-white col-xl-12 font-24 " id="title-bitter">
+            Jocuri competitive
         </div>
     </div>
-
-    <!-- Jocuri for fun -->
-    <div class="row-2" id="div4">
-        <div class="row pt-3 mb-4">
-            <div class="text-center text-white col-xl-12 col-lg-12 col-sm-12 col-12 font-24" id="title-bitter" style="margin-top: 50px;margin-bottom: 20px;">
-                Jocuri For Fun
-            </div>
+    <div class="row ">
+        <div class="col-xl-6 mx-auto mb-4 text-white  font-20 align-center ">
+            Fiecare joc promite multe premii, de la tricouri geeky si medalii, pana la skin-uri si cosmetice in-game.
+            Gotta win 'em all!
         </div>
-        <div class="row ">
-            <div class="col-xl-4 col-lg-6 col-sm-8 col-10 mx-auto mb-4 text-white  font-20 align-center ">
-                Fiecare joc promite multe premii, de la tricouri geeky si medalii, pana la skin-uri si cosmetice in-game. Gotta win 'em all!
-            </div>
 
-        </div>
-        <div class="row">
-            <div class="col-xl-12 text-white text-center mb-4">
-                <img src="css/img/jf.png" alt="jocuri for fun" id="fun" style="margin-bottom: 25px">
-                <img src="css/img/jf-mobile.png" alt="jocuri for fun" id="fun-mobile">
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12 text-white text-center mb-4">
+            <img class="row__section__competitive-games__main-img" alt="focuri competitive" src="build/img/jc.png">
+            <img class="row__section__competitive-games__main-img--mobile" alt="focuri competitive" src="build/img/jc-mobile.png">
         </div>
     </div>
-
-    <!-- Participa si tu -->
-    <div class="row-1" id="div5">
-        <div class="row pt-3">
-
-            <div class="col-xl-3 col-lg-3 col-sm-3 col-3 align-right" id="soldatel-stanga">
-                <img src="css/img/participa-st1.png" alt="hai cu noi!" id="participa-st">
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-center text-white" id="between-soliders">
-                <div class="font-24 my-4" id="title-bitter" style="margin-top:53px!important"> Participa si tu! </div>
-                <div class="font-20 my-1">Pentru a simti spiritul de gamer, inscrie-te la competitiile 5v5 sau 1v1.</div>
-                <div class="font-20 mb-5">Iti gasim noi echipa daca nu ti-ai convins inca prietenii sa vina.</div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center my-5">
-                    <a href="#div8" class="font-20 header-font topnav my-2" id="btn-jmk">INSCRIE-TE</a>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 align-left" id="soldatel-dreapta">
-                <img src="css/img/participa-dr1.png" alt="te asteptam!">
-            </div>
+    <div class="row ">
+        <div class="col-xl-12 text-center my-5">
+            <a class="font-20 header-font topnav" href="regulament.html" id="btn-jmk">REGULAMENT</a>
         </div>
     </div>
-    <!-- Bilete + preturi -->
-    <div class="row-2" id="div6">
-        <div class="row pt-4 mb-4">
-            <div class="text-center text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 font-24 " id="title-bitter" style="margin-top:30px;margin-bottom:20px">
-                Bilete
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 mx-auto mb-3 text-white  font-20 align-center " style="line-height: 30px;letter-spacing: 1px;">
-                Dupa ce te-ai inscris poti sa iti achizitionezi biletul de participare de la voluntarii nostri, pe care ii gasesti in holurile
-                Facultatii de Informatica. Daca nu i-ai gasit, poti cumpara bilete chiar la intrarea la Party.
-            </div>
+</div>
 
-        </div>
-        <div class="row mb-2">
-            <div class="text-center text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 font-24" id="title-bitter">
-                Preturi
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-4 col-lg-5 col-md-7 col-sm-10 col-10 text-white text-center mb-4 mx-auto">
-                <img src="css/img/preturi.png" alt="jocuri for fun" style="margin-bottom:30px;" width="100%">
-            </div>
+<!-- Jocuri for fun -->
+<div class="row__section--bg-deschis row__section row__section__fun-games" id="div4">
+    <div class="row pt-3 mb-4">
+        <div class="text-center text-white col-xl-12 col-lg-12 col-sm-12 col-12 font-24" id="title-bitter"
+             style="margin-top: 50px;margin-bottom: 20px;">
+            Jocuri For Fun
         </div>
     </div>
+    <div class="row ">
+        <div class="col-xl-4 col-lg-6 col-sm-8 col-10 mx-auto mb-4 text-white  font-20 align-center ">
+            Fiecare joc promite multe premii, de la tricouri geeky si medalii, pana la skin-uri si cosmetice in-game.
+            Gotta win 'em all!
+        </div>
 
-    <!-- harta -->
-    <div class="row-1  pt-3" id="div7">
+    </div>
+    <div class="row">
+        <div class="col-xl-12 text-white text-center mb-4">
+            <img alt="jocuri for fun" class="row__section__fun-games__image" src="build/img/jf.png" style="margin-bottom: 25px">
+            <img alt="jocuri for fun" class="row__section__fun-games__image--mobile" src="build/img/jf-mobile.png">
+        </div>
+    </div>
+</div>
+
+<!-- Participa si tu -->
+<div class="row__section row__section--bg-inchis row__section--bottom row__section__competitive">
+    <div class="row pt-3">
+
+        <div
+            class="row__section__competitive__img__container row__section__competitive__img__container--left col-xl-3 col-lg-3 col-sm-3 col-3 align-right"
+        >
+            <img class="row__section__competitive__img" alt="hai cu noi!" id="participa-st" src="build/img/participa-st1.png">
+        </div>
+        <div
+            class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-center text-white"
+        >
+            <div class="font-24 my-4" id="title-bitter" style="margin-top:53px!important"> Participa si tu!</div>
+            <div class="font-20 my-1">Pentru a simti spiritul de gamer, inscrie-te la competitiile 5v5 sau 1v1.</div>
+            <div class="font-20 mb-5">Iti gasim noi echipa daca nu ti-ai convins inca prietenii sa vina.</div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center my-5">
+                <a class="font-20 header-font topnav my-2" href="#div8" id="btn-jmk">INSCRIE-TE</a>
+            </div>
+        </div>
+        <div class="row__section__competitive__img__container row__section__competitive__img__container--right col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 align-left">
+            <img class="row__section__competitive__img" alt="te asteptam!" src="build/img/participa-dr1.png">
+        </div>
+    </div>
+</div>
+<!-- Bilete + preturi -->
+<div class="row__section--bg-deschis row__section" id="div6">
+    <div class="row pt-4 mb-4">
+        <div class="text-center text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 font-24 " id="title-bitter"
+             style="margin-top:30px;margin-bottom:20px">
+            Bilete
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 mx-auto mb-3 text-white  font-20 align-center "
+             style="line-height: 30px;letter-spacing: 1px;">
+            Dupa ce te-ai inscris poti sa iti achizitionezi biletul de participare de la voluntarii nostri, pe care ii
+            gasesti in holurile
+            Facultatii de Informatica. Daca nu i-ai gasit, poti cumpara bilete chiar la intrarea la Party.
+        </div>
+
+    </div>
+    <div class="row mb-2">
+        <div class="text-center text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 font-24" id="title-bitter">
+            Preturi
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 col-lg-5 col-md-7 col-sm-10 col-10 text-white text-center mb-4 mx-auto">
+            <img alt="jocuri for fun" src="build/img/preturi.png" width="100%">
+        </div>
+    </div>
+</div>
+
+<!-- harta -->
+<div class="row__section--bg-inchis row__section row__section__fun pt-3" id="div7">
+    <div class="container">
         <div class="row">
-
-            <div class="text-center text-white col-xl-12 font-24 mb-2" id="title-bitter" style="margin-top:50px;margin-bottom: 40px!important">
+            <div class="text-center text-white col-xl-12 font-24 mb-2" id="title-bitter"
+                 style="margin-top:50px;margin-bottom: 40px!important">
                 Unde va fi tot fun-ul?
             </div>
-
-
         </div>
-        <span class="row">
-            <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 col-12 align-center pb-5 left-10 mx-auto      " id="harta">
+        <div class="row">
+            <div id="harta">
                 <div class="text-white  font-18 line-height-36 align-center width-80">
-                    Competitia si consolele vor fi toate la sala VooDoo. </br> Sala se afla pe Bulevardul Independenței 25-27, dar pentru
-                    mai multe detalii puteti contacta coordonatorul evenimentului Tinca Ketano-Leonard la numarul 0751635987.
+                    Competitia si consolele vor fi toate la sala VooDoo. </br> Sala se afla pe Bulevardul Independenței
+                    25-27, dar pentru
+                    mai multe detalii puteti contacta coordonatorul evenimentului Tinca Ketano-Leonard la numarul
+                    0751635987.
                 </div>
-                <iframe src="https://snazzymaps.com/embed/47209" class="my-2 mx-auto" width="100%" height="40%" align="center" id="no-border"></iframe>
+                <iframe
+                    align="center"
+                    class="my-2 mx-auto no-border"
+                    height="40%"
+                    src="https://snazzymaps.com/embed/47209"
+                    width="100%"
+                >
+                </iframe>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-right">
-                <img src="css/img/fantana.png" id="nexus" style="margin-top:30px">
+            <div>
+                <img id="nexus" src="build/img/fantana.png">
             </div>
-        </span>
+        </div>
     </div>
+</div>
 
-    <div class="row-2 pt-3 finally" id="div8">
-
+<div class="row__section--bg-deschis row__section pt-3 finally" id="div8">
+    <div class="container">
         <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 align-left my-auto LEFT-10">
-                <img src="css/img/logo.png">
+                <img src="build/img/logo.png">
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-white align-left my-auto " id="coordonator">
                 Coordonator: Tinca Ketano-Leonard
@@ -232,7 +272,8 @@
             </div>
             <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 align-right my-auto">
                 <div class="col-xl-12 my-5 pr-2">
-                    <a href="https://www.facebook.com/events/1781252058612146/" class="font-20 header-font topnav btn-1" id="btn-jmk">EVENIMENT
+                    <a class="font-20 header-font topnav btn-1" href="https://www.facebook.com/events/1781252058612146/"
+                       id="btn-jmk">EVENIMENT
                         <i class="fa fa-facebook"></i>
                         </i>
                     </a>
@@ -242,14 +283,17 @@
         </div>
         <div class="row">
             <div class="col-xl-12 align-center my-5">
-                <img src="css/img/asii.png" width="80px " height="45px">
+                <img height="45px" src="build/img/asii.png" width="80px ">
             </div>
         </div>
         <div class="row align-center ">
             <div class="col-xl-8 mx-auto text-white">
-                Asociaţia Studenţilor Informaticieni Ieşeni (ASII) este reprezentata de un grup de persoane determinate, creative si dinamice,
-                ce au in comun pasiunea pentru Informatica si impartasesc un set de teluri si valori. Activitatile organizate
-                in cadrul asociatiei se adreseaza studentilor si profesorilor Facultatii de Informatica Iasi, dar si comunitatii
+                Asociaţia Studenţilor Informaticieni Ieşeni (ASII) este reprezentata de un grup de persoane determinate,
+                creative si dinamice,
+                ce au in comun pasiunea pentru Informatica si impartasesc un set de teluri si valori. Activitatile
+                organizate
+                in cadrul asociatiei se adreseaza studentilor si profesorilor Facultatii de Informatica Iasi, dar si
+                comunitatii
                 IT din Romania, dorind sa promoveze proactivitatea, dezvoltarea personala si sociala.
             </div>
         </div>
@@ -262,12 +306,11 @@
 
 
             </div>
-        </div>
-
+    </div>
+    </div>
+</div>
+<script src="js/header.js"></script>
 
 </body>
-
-
-
 
 </html>

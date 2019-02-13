@@ -1,8 +1,11 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav text-center mx-auto") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav text-center mx-auto";
-    }
-}
+const $burger = document.querySelector('.navbar__links--burger');
+const $mobileBurger = document.querySelector('.mobile-navbar__links--burger');
+const $mobileNavbar = document.querySelector('.mobile-navbar');
+
+$burger.addEventListener('click', () => {
+  $mobileNavbar.classList.add('mobile-navbar--active');
+});
+
+$mobileBurger.addEventListener('click', () => {
+  $mobileNavbar.classList.remove('mobile-navbar--active');
+});
