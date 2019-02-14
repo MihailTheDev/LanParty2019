@@ -43,7 +43,7 @@
 </div>
 
 
-<div class="row__section--bg-inchis" id="div1">
+<div class="row__section--bg-inchis row__section__header" id="div1">
     <nav class="navbar container">
         <div class="navbar__info">
             <a class="navbar__info__logo" href="index.html">
@@ -67,32 +67,31 @@
             </div>
         </div>
     </nav>
-    <div class="row">
-
-        <iframe allow="autoplay; encrypted-media" allowfullscreen
-                class="trailer mx-auto my-5 col-xl-7 col-lg-7 col-sm-8 col-9 gradient-border"
-                frameborder="1"
-                height="45%" src="https://www.youtube.com/embed/Lj_P9suwpU0" width="99%"></iframe>
-    </div>
-    <div class="row" id="text-centrat">
-
+    <div class="row__section__header__content">
+        <div class="row">
+            <iframe
+                    allow="autoplay; encrypted-media" allowfullscreen
+                    class="main-video trailer mx-auto my-5 col-xl-7 col-lg-7 col-sm-8 col-9 gradient-border"
+                    frameborder="1"
+                    height="45%" src="https://www.youtube.com/embed/Lj_P9suwpU0" width="99%"></iframe>
+        </div>
+        <div class="row" id="text-centrat">
             <span class="text-white mx-auto font-22 col-xl-6 col-lg-7 col-sm-10 col-10 mb-3" id="under-video">
                 Vino singur sau cu prietenii tai si arata-ne skill-urile tale de gaming. Intr-o atmosfera competitiva. Asii organizeaza o
                 noua editie de LAN party, unde toti pasionatii de jocuri vor castiga premii pe masura.
             </span>
-
-        </span>
+            </span>
+        </div>
     </div>
 </div>
 <!-- Pana aici am prima parte (navbar + yt video -->
 <div class="row__section--bg-deschis row row__section row__section__event-description promo" id="div2">
     <div class="row" id="shit-heroes">
-        <div class="col-xl-6 col-lg-5 col-sm-4 col-5 is-center-aligned">
+        <div class="row__section__event-description__image-container">
             <!-- imagine eroi -->
-            <img alt="heroes" class="ml-4" id="eroi" src="build/img/eroi1.png">
+            <img class="main-img" alt="heroes" class="ml-4" id="eroi" src="build/img/eroi1.png">
         </div>
-        <div class="col-xl-2 hidden-lg hidden-md hidden-sm hidden-xs"></div>
-        <div class="col-xl-3 col-lg-6 col-sm-8 col-12 mx-2">
+        <div class="row__section__event-description__info">
             <div class=" text-white font-24 my-5 align-center" id="title-bitter">
                 Lan Party Iasi 2018
             </div>
@@ -183,7 +182,7 @@
             <img class="row__section__competitive__img" alt="hai cu noi!" id="participa-st" src="build/img/participa-st1.png">
         </div>
         <div
-            class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-center text-white"
+            class="row__section__competitive__img__container--center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-center text-white"
         >
             <div class="font-24 my-4" id="title-bitter" style="margin-top:53px!important"> Participa si tu!</div>
             <div class="font-20 my-1">Pentru a simti spiritul de gamer, inscrie-te la competitiile 5v5 sau 1v1.</div>
@@ -198,14 +197,14 @@
     </div>
 </div>
 <!-- Bilete + preturi -->
-<div class="row__section--bg-deschis row__section" id="div6">
+<div class="row__section--bg-deschis row__section row__section__tickets" id="div6">
     <div class="row pt-4 mb-4">
         <div class="text-center text-white col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 font-24 " id="title-bitter"
              style="margin-top:30px;margin-bottom:20px">
             Bilete
         </div>
     </div>
-    <div class="row ">
+    <div class="row row__section__tickets__text">
         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 mx-auto mb-3 text-white  font-20 align-center "
              style="line-height: 30px;letter-spacing: 1px;">
             Dupa ce te-ai inscris poti sa iti achizitionezi biletul de participare de la voluntarii nostri, pe care ii
@@ -246,7 +245,7 @@
                 <iframe
                     align="center"
                     class="my-2 mx-auto no-border"
-                    height="40%"
+                    height="50%"
                     src="https://snazzymaps.com/embed/47209"
                     width="100%"
                 >
@@ -259,9 +258,9 @@
     </div>
 </div>
 
-<div class="row__section--bg-deschis row__section pt-3 finally" id="div8">
+<div class="row__section--bg-deschis row__section row__section__footer pt-3 finally" id="div8">
     <div class="container">
-        <div class="row">
+        <div class="row row__section__footer--top">
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 align-left my-auto LEFT-10">
                 <img src="build/img/logo.png">
             </div>
@@ -278,7 +277,6 @@
                         </i>
                     </a>
                 </div>
-
             </div>
         </div>
         <div class="row">
