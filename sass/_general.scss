@@ -9,35 +9,44 @@ body {
 
 .row {
   margin: 0;
+
   &__section {
     padding: 60px 0;
     -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+
     &--bg-deschis {
       background-image: url('../build/img/bg-deschis.png');
     }
+
     &--bg-inchis {
       background-image: url('../build/img/bg-inchis.png');
     }
+
     &--bottom {
       padding-bottom: 0;
     }
+
     &--top-negative-margin {
       margin-top: -100px;
       @include omb-breakpoint('phone') {
         margin-top: 0;
       }
     }
+
     &__competitive {
       overflow: hidden;
+
       &__img {
         height: 100%;
+
         &__container {
           opacity: 0.8;
           @include omb-breakpoint('to-tablet') {
             left: 0;
           }
+
           &--left {
             vertical-align: baseline;
             position: relative;
@@ -46,6 +55,7 @@ body {
               display: none;
             }
           }
+
           &--right {
             vertical-align: baseline;
             position: relative;
@@ -59,6 +69,7 @@ body {
               justify-content: center;
             }
           }
+
           &--center {
             @include omb-breakpoint('phone') {
               max-width: 100% !important;
@@ -68,12 +79,14 @@ body {
         }
       }
     }
+
     &__header {
       padding-bottom: 70px;
       min-height: 100vh;
       position: relative;
+
       &__content {
-        height: 100% ;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -86,11 +99,13 @@ body {
           position: relative;
           padding-top: 0;
         }
+
         .row {
           width: 100%;
         }
       }
     }
+
     &__tickets {
       &__text {
         @include omb-breakpoint('phone') {
@@ -101,13 +116,16 @@ body {
         }
       }
     }
+
     &__competitive-games {
       padding-top: 150px;
+
       &__main-img {
         max-width: 90%;
         @include omb-breakpoint('phone') {
           display: none;
         }
+
         &--mobile {
           display: none;
           max-width: 85%;
@@ -118,50 +136,62 @@ body {
         }
       }
     }
+
     &__event-description {
       z-index: 75;
       overflow: hidden;
       display: flex;
       justify-content: space-between;
+
       #mobile-shit {
         display: none;
+
         .mobile-image {
           width: 100%;
         }
+
         @include omb-breakpoint('to-tablet') {
           display: flex;
           justify-content: center;
         }
       }
+
       #shit-heroes {
         width: 100%;
+
         .main-img {
           transform: rotate(-3deg);
           margin-bottom: -35px;
         }
+
         @include omb-breakpoint('to-tablet') {
           display: none;
         }
       }
+
       &__image-container {
         flex: 1;
       }
+
       &__info {
         flex: 1;
         margin: 0 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         span {
           text-align: center;
           max-width: 450px;
         }
       }
     }
+
     &__fun {
       .row-map {
         flex-wrap: unset !important;
       }
+
       .row:last-child {
         display: flex;
         justify-content: space-between;
@@ -178,16 +208,19 @@ body {
             margin-bottom: 40px;
           }
         }
+
         > div {
           flex: 1;
         }
       }
     }
+
     &__fun-games {
       &__image {
         @include omb-breakpoint('phone') {
           display: none;
         }
+
         &--mobile {
           display: none;
           max-width: 85%;
@@ -198,22 +231,32 @@ body {
         }
       }
     }
+
     &__footer {
       padding-top: 50px !important;
+
       &--top {
-        @include omb-breakpoint('to-tablet') {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        > div {
-          margin: 10px 0 !important;
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          max-width: 100% !important;
-          padding: 0;
-          right: 0 !important;
+        #coordonator {
+          margin-left: 10px;
         }
+
+        @include omb-breakpoint('to-tablet') {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          #coordonator {
+            margin-left: 0;
+          }
+          > div {
+            margin: 10px 0 !important;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            max-width: 100% !important;
+            padding: 0;
+            right: 0 !important;
+            flex: unset;
+          }
         }
       }
     }

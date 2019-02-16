@@ -1,0 +1,111 @@
+.item-content {
+  //background: red;
+  padding: 20px;
+  display: flex;
+
+  p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 20px;
+  }
+}
+
+.font-18 {
+  font-size: 18;
+  color: white;
+  font-weight: bold;
+}
+
+.carousel {
+  &-inner {
+    width: 100%;
+    //margin-left:20%;
+  }
+
+  &-indicators {
+    background: url("../build/img/bg-deschis.png");
+    text-align: center;
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    .active {
+      //width: 170px !important;
+      //height: 65px !important;
+      padding: 5px;
+      background: #292929b3;
+      border: 5px solid #000000e6;
+      border-radius: 10px;
+      transition: all .15s ease-in-out;
+    }
+
+    img {
+      cursor: pointer;
+      width: 120px;
+      height: 50px;
+      margin: 20px;
+      object-fit: contain;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+}
+
+
+.regulament-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.row__section__regulament-carousel {
+  .carousel-item {
+    min-height: 350px;
+  }
+}
+
+@media(min-width: 1201px) {
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media(max-width: 1200px) {
+
+  .carousel-indicators img {
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+
+  }
+  .selected {
+    width: 150px !important;
+    height: 75px !important;
+    padding: 5px;
+
+
+  }
+
+}
+
+@media (max-width: 1380px) {
+  .item-content {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 950px) {
+  .carousel-inner {
+    width: 100%
+
+  }
+  .item-content {
+    p {
+      width: 100%;
+    }
+  }
+}

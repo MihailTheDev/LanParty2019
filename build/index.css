@@ -923,11 +923,15 @@ body {
           display: block; } }
     .row__section__footer {
       padding-top: 50px !important; }
+      .row__section__footer--top #coordonator {
+        margin-left: 10px; }
       @media only screen and (max-width: 1199px) {
         .row__section__footer--top {
           display: flex;
           flex-direction: column;
           align-items: center; }
+          .row__section__footer--top #coordonator {
+            margin-left: 0; }
           .row__section__footer--top > div {
             margin: 10px 0 !important;
             text-align: center;
@@ -935,7 +939,8 @@ body {
             justify-content: center;
             max-width: 100% !important;
             padding: 0;
-            right: 0 !important; } }
+            right: 0 !important;
+            flex: unset; } }
 
 #btn-jmk {
   border: 2px solid transparent;
@@ -955,5 +960,75 @@ body {
   @media only screen and (max-width: 750px) {
     .main-video {
       min-height: 150px; } }
+
+.item-content {
+  padding: 20px;
+  display: flex; }
+  .item-content p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 20px; }
+
+.font-18 {
+  font-size: 18;
+  color: white;
+  font-weight: bold; }
+
+.carousel-inner {
+  width: 100%; }
+.carousel-indicators {
+  background: url("../build/img/bg-deschis.png");
+  text-align: center;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .carousel-indicators .active {
+    padding: 5px;
+    background: #292929b3;
+    border: 5px solid #000000e6;
+    border-radius: 10px;
+    transition: all .15s ease-in-out; }
+  .carousel-indicators img {
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    margin: 20px;
+    object-fit: contain;
+    transition: all .3s ease-in-out; }
+
+.regulament-item {
+  display: flex;
+  flex-direction: column; }
+
+.row__section__regulament-carousel .carousel-item {
+  min-height: 350px; }
+
+@media (min-width: 1201px) {
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+@media (max-width: 1200px) {
+  .carousel-indicators img {
+    width: 100px;
+    height: 50px;
+    margin: 20px; }
+
+  .selected {
+    width: 150px !important;
+    height: 75px !important;
+    padding: 5px; } }
+@media (max-width: 1380px) {
+  .item-content {
+    width: 80%;
+    margin-left: 10%; } }
+@media (max-width: 950px) {
+  .carousel-inner {
+    width: 100%; }
+
+  .item-content p {
+    width: 100%; } }
 
 /*# sourceMappingURL=index.css.map */

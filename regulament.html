@@ -2,205 +2,282 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="css/oblic.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive-shit.css">
-    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   </body>
-    
-    <link rel="stylesheet" href="css/slider2019.css">
+    <link href="build/index.css" rel="stylesheet">
+
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>Lan Party</title>
-    <script src="js/header.js"></script>
-    <script src="js/slider2019.js"></script>
 </head>
 
 <body>
 
-    <div class="row-1" id="div1">
-        </br>
-        <div class="topnav text-center mx-auto" id="myTopnav">
+<div class="mobile-navbar">
+    <div class="mobile-navbar__info">
+        <a class="mobile-navbar__info__logo" href="index.html">
+            <img alt="LanParty" src="build/img/logo.png">
+        </a>
+
+        <div class="mobile-navbar__info__details">
+            <div class="mobile-navbar__info__details__item"><span>LanParty 2018</span></div>
+            <span class="mobile-navbar__info__details__item"><span>24 25 Februarie</span></span>
+            <span class="mobile-navbar__info__details__item"><span>3 Martie</span></span>
+        </div>
+    </div>
+    <div class="mobile-navbar__links">
+        <div class="mobile-navbar__links--main">
+            <a class="mobile-navbar__links--main__link" href="regulament.html">REGULAMENT</a>
+            <a class="mobile-navbar__links--main__link" href="#div8">CONTACT</a>
+            <a class="mobile-navbar__links--main__button" href="#div8">INSCRIE-TE</a>
+        </div>
+    </div>
+    <div class="mobile-navbar__links--burger nav-burger">
+        <i class="fa fa-times"></i>
+    </div>
+</div>
 
 
-
-            <a href="index.html">
-                <img src="build/img/logo.png" alt="LanParty"> </a>
-
-            <span class="my-auto text-white  font-18 mr-5v2 header-font">
-                LanParty 2018| 24 25 Februarie| 3 Martie
-            </span>
-
-            <a href="regulament.html" class="active font-14 ml-5v2 header-font">REGULAMENT</a>
-            <a href="#div8" class="font-14 header-font">CONTACT</a>
-            <a href="#div8" class="font-14 header-font" id="inscriere">INSCRIE-TE</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="burger" onclick="myFunction()">
-                <img src="build/img/burger.png">
+<div class="row-1 row__section--bg-inchis">
+    <nav class="navbar container">
+        <div class="navbar__info">
+            <a class="navbar__info__logo" href="index.html">
+                <img alt="LanParty" src="build/img/logo.png">
             </a>
 
+            <div class="navbar__info__details">
+                <div class="navbar__info__details__item"><span>LanParty 2018</span></div>
+                <span class="navbar__info__details__item"><span>24 25 Februarie</span></span>
+                <span class="navbar__info__details__item"><span>3 Martie</span></span>
+            </div>
         </div>
+        <div class="navbar__links">
+            <div class="navbar__links--main">
+                <a class="navbar__links--main__link" href="regulament.html">REGULAMENT</a>
+                <a class="navbar__links--main__link" href="#div8">CONTACT</a>
+                <a class="navbar__links--main__button" href="#div8">INSCRIE-TE</a>
+            </div>
+            <div class="navbar__links--burger nav-burger " style="font-size:15px;">
+                <img src="build/img/burger.png">
+            </div>
+        </div>
+    </nav>
+
+    <div class="row__section row__section__regulament-header">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mx-auto text-white align-center font-24 my-4">
-                Esti pregatit sa castrigi?
+                Esti pregatit sa castigi?
             </div>
         </div>
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-white mx-auto align-center font-18 my-4">
-                Inaite sa te inscrii la oricare dintre competitii nu uita sa consulti regulamentul dupa care se vor desfasura fiecare joc.
+                Inaite sa te inscrii la oricare dintre competitii nu uita sa consulti regulamentul dupa care se vor
+                desfasura fiecare joc.
             </div>
         </div>
+    </div>
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="row__section__regulament-carousel">
+
+
+        <div class="carousel slide" data-interval="false" data-ride="carousel" id="myCarousel">
             <!-- Indicators -->
-            <div class="carousel-indicator  ">
-                <img class="selected" data-target="#myCarousel" data-slide-to="0" onclick="addSelected(this)" src="./css/img/cs.jpg">
-                <img  data-target="#myCarousel" data-slide-to="1" onclick="addSelected(this)" src="./css/img/lol.jpg">
-                <img   data-target="#myCarousel" data-slide-to="2" onclick="addSelected(this)" src="./css/img/rl.jpg">
-                <img   data-target="#myCarousel" data-slide-to="3" onclick="addSelected(this)" src="./css/img/dota.jpg">
-                 <img   data-target="#myCarousel" data-slide-to="4" onclick="addSelected(this)" src="./css/img/fifa.jpg">
-                <img   data-target="#myCarousel" data-slide-to="5" onclick="addSelected(this)" src="./css/img/smite.jpg">
-              <img  data-target="#myCarousel" data-slide-to="6" onclick="addSelected(this)" src="./css/img/hs.jpg">
+            <div class="carousel-indicators">
+                <img class="active" data-slide-to="0" data-target="#myCarousel" onclick="addSelected(this)"
+                     src="./build/img/cs.jpg">
+                <img data-slide-to="1" data-target="#myCarousel" onclick="addSelected(this)" src="./build/img/lol.jpg">
+                <img data-slide-to="2" data-target="#myCarousel" onclick="addSelected(this)" src="./build/img/rl.jpg">
+                <img data-slide-to="3" data-target="#myCarousel" onclick="addSelected(this)" src="./build/img/dota.jpg">
+                <img data-slide-to="4" data-target="#myCarousel" onclick="addSelected(this)" src="./build/img/fifa.jpg">
+                <img data-slide-to="5" data-target="#myCarousel" onclick="addSelected(this)"
+                     src="./build/img/smite.jpg">
+                <img data-slide-to="6" data-target="#myCarousel" onclick="addSelected(this)" src="./build/img/hs.jpg">
             </div>
-          
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
-                <div class="item-content">
-                 <p> Counter Strike Global Ofensive</p>
-                            <ol class="font-18">
-                                    <li> Formatul echipelor este 5 vs 5 (Team Play, 5 jucători în fiecare echipă). Rundele vor fi
-                                    în număr de 30 (15 runde la Terro și 15 runde la Counter-Terro).</li>
-                                    <li> Condițiia de victorie este prima echipă care câștigă 16 runde.</li>
-                                    <li>în caz de remiză (15-15) vor fi 6 runde suplimentare, 3 runde Terro si 3 runde Counter-Terro,
-                                    repetându-se procesul până nu mai este remiză. </li>
-                                    <li> Timpul unei runde este de 2 minute.</li>
-                                    <li> Membrii unei echipe pot comunica între ei oricând, full ghost talking este acceptat. </li>
-                                    <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                    <li>Boosting (accesarea zonelor din hartă prin ”pășirea” pe alți jucători) este permis atâta
-                                    timp cât nu reprezintă un exploit (ex. Din unchiul respectiv se poate vedea prin pereți).</li>
-                                    </ol>
-                               
-                </div>
-              </div>
-          
-              <div class="item">
-                    <div class="item-content">
-                <p> League of Legends 5v5</p>
-                <ol class="font-18">
-                        <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3. </li>
-                        <li> Fiecare echipă va fi formată din 5 jucatori. </li>
-                        <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori. </li>
-                        <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu excepția problemelor
-                        tehnice.
-                        </li>
-                        <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
-                        </li>
-                        <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                        <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind permise meciurile
-                        în handicap numeric( ex. 4v5, 3v5 etc.)
-                        </li>
-                </ol>
-              </div></div>
-              
-              <div class="item">
-                    <div class="item-content">
-                <p> Rocket League</p>
-                <ol start="1" class="font-18">
-                        <li> Fiecare jucător va avea ocazia să se joace cu fiecare dintre ceilalți jucători. </li>
-                        <li> Rundele vor fi numai de tipul 1v1.</li>
-                        <li>La sfârșitul unei runde, câștigătorul va primi un punct. Acest lucru va fi constatat de către
-                        un voluntar. </li>
-                        <li> Ordinea jucătorilor în clasament va fi invers proporțională cu numărul de puncte acumulate.</li>
-                        <li> în caz de egalitate în clasament, se va relua sistemul cu punctele numai pentru jucătorii
-                        în cauză.</li>
-                        <li> Pauzele nu sunt permise în timpul unei runde.</li>
-                        <li>în caz de dificultăți tehnice neașteptate, jucătorii pot cere refacerea rundei. </li>
-                        <li>Orice tentativă de fraudă va duce la descalificarea imediată a jucătorului/jucătorilor. </li>
-                     </ol>
-              </div></div>
-              <div class="item">
-                    <div class="item-content">
-                <p> Dota 2</p>
-                            <ol start="1" class="font-18">z
-                                    <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                    <li>Se permite comunicarea între membrii unei echipe.
-                                    </li>
-                                </ol>
-              </div></div>
-              <div class="item">
-                    <div class="item-content">
-                <p> Fifa 2018</p>
-                            <ol start="1" class="font-18">
-                                    <li> Modul de joc va fi pe sistem de grupe. (3 pct victoria, 1 pct egal, 0 pct infrangerea) </li>
-                                    <li> In functie de numarul de participanti, primii 2 sau 3 din fiecare grupa vor trece mai departe.
-                                    </li>
-                                    <li>In a doua etapa a competitiei, se va juca in sistem ladder de tip eliminatoriu. In fiecare
-                                    etapa in afara de cea finala, se va juca best of 3 iar finala best of 5
-                                    </li>
-                                    <li> Se va juca cu repriza de 6 minute la dificultate legendary cu game speed normal și match
-                                    conditions random.
-                                    </li>
-                                    <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
-                                     </li>
-                                    <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                    <li>îSe va juca cu Injuries on, offsides on, bookings on, handball off, iar controller : defending:
-                                    tactical defending.
-                                    </li>
-                                    </ol>
-              </div></div>
-              <div class="item">
-                    <div class="item-content">
-                <p> Smite</p>
-                <ol start="1" class="font-18">
-                        <ol start="1" class="font-18">
-                                <li>Se va juca 1v1 pe mapa Joust. </li>
-                                <li> 4 banuri de fiecare la începutul meciului în chat.</li>
-                                <li>Selectarea unui campion banat duce la pierderea meciunui prin forfeit.</li>
-                                <li> Fiecare jucător va juca ce ceilalți primind 1 punct pentru victorie, la sfârșit primi 4 for
-                                intra în semifinale.</li>
-                                <li> Semifinalele și finala se vor juca best of 3.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                <div class="carousel-item active">
+                    <div class="item-content container regulament-item">
+                        <p> Counter Strike Global Ofensive</p>
+                        <ol class="font-18">
+                            <li> Formatul echipelor este 5 vs 5 (Team Play, 5 jucători în fiecare echipă). Rundele vor
+                                fi
+                                în număr de 30 (15 runde la Terro și 15 runde la Counter-Terro).
+                            </li>
+                            <li> Condițiia de victorie este prima echipă care câștigă 16 runde.</li>
+                            <li>în caz de remiză (15-15) vor fi 6 runde suplimentare, 3 runde Terro si 3 runde
+                                Counter-Terro,
+                                repetându-se procesul până nu mai este remiză.
+                            </li>
+                            <li> Timpul unei runde este de 2 minute.</li>
+                            <li> Membrii unei echipe pot comunica între ei oricând, full ghost talking este acceptat.
+                            </li>
+                            <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                            <li>Boosting (accesarea zonelor din hartă prin ”pășirea” pe alți jucători) este permis atâta
+                                timp cât nu reprezintă un exploit (ex. Din unchiul respectiv se poate vedea prin
+                                pereți).
+                            </li>
                         </ol>
-              </div></div>
-              <div class="item">
-                    <div class="item-content">
-                <p> HeartStone</p>
-                <ol start="1" class="font-18">
-                        <ol start="1" class="font-18">
-                                <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3. </li>
-                                <li> Fiecare echipă va fi formată din 5 jucatori. </li>
-                                <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori. </li>
-                                <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu excepția problemelor
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item-content container regulament-item">
+                        <p> League of Legends 5v5</p>
+                        <ol class="font-18">
+                            <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3.</li>
+                            <li> Fiecare echipă va fi formată din 5 jucatori.</li>
+                            <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori.
+                            </li>
+                            <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu excepția
+                                problemelor
                                 tehnice.
-                                </li>
-                                <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind permise meciurile
+                            </li>
+                            <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10
+                                minute.
+                            </li>
+                            <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                            <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind permise
+                                meciurile
+                                în handicap numeric( ex. 4v5, 3v5 etc.)
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="item-content container regulament-item">
+                        <p> Rocket League</p>
+                        <ol class="font-18" start="1">
+                            <li> Fiecare jucător va avea ocazia să se joace cu fiecare dintre ceilalți jucători.</li>
+                            <li> Rundele vor fi numai de tipul 1v1.</li>
+                            <li>La sfârșitul unei runde, câștigătorul va primi un punct. Acest lucru va fi constatat de
+                                către
+                                un voluntar.
+                            </li>
+                            <li> Ordinea jucătorilor în clasament va fi invers proporțională cu numărul de puncte
+                                acumulate.
+                            </li>
+                            <li> în caz de egalitate în clasament, se va relua sistemul cu punctele numai pentru
+                                jucătorii
+                                în cauză.
+                            </li>
+                            <li> Pauzele nu sunt permise în timpul unei runde.</li>
+                            <li>în caz de dificultăți tehnice neașteptate, jucătorii pot cere refacerea rundei.</li>
+                            <li>Orice tentativă de fraudă va duce la descalificarea imediată a
+                                jucătorului/jucătorilor.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-content container regulament-item">
+                        <p> Dota 2</p>
+                        <ol class="font-18" start="1">
+                            <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                            <li>Se permite comunicarea între membrii unei echipe.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-content container regulament-item">
+                        <p> Fifa 2018</p>
+                        <ol class="font-18" start="1">
+                            <li> Modul de joc va fi pe sistem de grupe. (3 pct victoria, 1 pct egal, 0 pct
+                                infrangerea)
+                            </li>
+                            <li> In functie de numarul de participanti, primii 2 sau 3 din fiecare grupa vor trece mai
+                                departe.
+                            </li>
+                            <li>In a doua etapa a competitiei, se va juca in sistem ladder de tip eliminatoriu. In
+                                fiecare
+                                etapa in afara de cea finala, se va juca best of 3 iar finala best of 5
+                            </li>
+                            <li> Se va juca cu repriza de 6 minute la dificultate legendary cu game speed normal și
+                                match
+                                conditions random.
+                            </li>
+                            <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10
+                                minute.
+                            </li>
+                            <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                            <li>îSe va juca cu Injuries on, offsides on, bookings on, handball off, iar controller :
+                                defending:
+                                tactical defending.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-content container regulament-item">
+                        <p> Smite</p>
+                        <ol class="font-18" start="1">
+                            <li>Se va juca 1v1 pe mapa Joust.</li>
+                            <li> 4 banuri de fiecare la începutul meciului în chat.</li>
+                            <li>Selectarea unui campion banat duce la pierderea meciunui prin forfeit.</li>
+                            <li> Fiecare jucător va juca ce ceilalți primind 1 punct pentru victorie, la sfârșit
+                                primi 4
+                                for
+                                intra în semifinale.
+                            </li>
+                            <li> Semifinalele și finala se vor juca best of 3.
+                            </li>
+                            <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item-content container regulament-item">
+                        <p> HeartStone</p>
+                        <ol class="font-18" start="1">
+                            <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3.</li>
+                            <li> Fiecare echipă va fi formată din 5 jucatori.</li>
+                            <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori.
+                            </li>
+                            <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu
+                                excepția
+                                problemelor
+                                tehnice.
+                            </li>
+                            <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim
+                                10
+                                minute.
+                            </li>
+                            <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                            <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind
+                                permise
+                                meciurile
                                 în handicat numeric( ex. 4v5, 3v5 etc.)
-                                </li>
-                                </ol>
-              </div></div>
-              
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
             </div>
-          
-            
-          </div>
-        
+        </div>
+    </div>
 
 
     <!--
@@ -216,57 +293,62 @@ Main Image
 You can download it from http://leaverou.github.com/prefixfree/ -->
 
 
-
-
-    <div class="row-2 pt-3 finally" id="div8">
-
-        <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 align-left my-auto LEFT-10">
-                <img src="build/img/logo.png">
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-white align-left my-auto " id="coordonator">
-                Coordonator: Tinca Ketano-Leonard
-                </br>
-                Email: email@email.com
-            </div>
-            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 align-right my-auto">
-                <div class="col-xl-12 my-5 pr-2">
-                    <a href="#contact" class="font-20 header-font topnav btn-1" id="btn-jmk">EVENIMENT
-                        <i class="fa fa-facebook"></i>
-                        </i>
-                    </a>
+    <div class="row__section--bg-deschis row__section row__section__footer pt-3 finally" id="div8">
+        <div class="container">
+            <div class="row row__section__footer--top">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 align-left my-auto LEFT-10">
+                    <img src="build/img/logo.png">
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-white align-left my-auto " id="coordonator">
+                    Coordonator: Tinca Ketano-Leonard
+                    </br>
+                    Email: tinca.ketano@gmail.com
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 align-right my-auto">
+                    <div class="col-xl-12 my-5 pr-2">
+                        <a class="font-20 header-font topnav btn-1" href="https://www.facebook.com/events/1781252058612146/"
+                           id="btn-jmk">EVENIMENT
+                            <i class="fa fa-facebook"></i>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 align-center my-5">
+                    <img height="45px" src="build/img/asii.png" width="80px ">
+                </div>
+            </div>
+            <div class="row align-center ">
+                <div class="col-xl-8 mx-auto text-white">
+                    Asociaţia Studenţilor Informaticieni Ieşeni (ASII) este reprezentata de un grup de persoane determinate,
+                    creative si dinamice,
+                    ce au in comun pasiunea pentru Informatica si impartasesc un set de teluri si valori. Activitatile
+                    organizate
+                    in cadrul asociatiei se adreseaza studentilor si profesorilor Facultatii de Informatica Iasi, dar si
+                    comunitatii
+                    IT din Romania, dorind sa promoveze proactivitatea, dezvoltarea personala si sociala.
+                </div>
+            </div>
+            </br>
+            </br>
+            <div class="row">
+                <div class="col-xl-12 align-center text-white pb-4" style="margin-bottom:30px">
+                    ASII
+                    <i class="fa fa-copyright"></i> 2018
 
+
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 align-center my-5">
-                <img src="build/img/asii.png" width="80px " height="45px">
-            </div>
-        </div>
-        <div class="row align-center ">
-            <div class="col-xl-8 mx-auto text-white">
-                Asociaţia Studenţilor Informaticieni Ieşeni (ASII) este reprezentata de un grup de persoane determinate, creative si dinamice,
-                ce au in comun pasiunea pentru Informatica si impartasesc un set de teluri si valori. Activitatile organizate
-                in cadrul asociatiei se adreseaza studentilor si profesorilor Facultatii de Informatica Iasi, dar si comunitatii
-                IT din Romania, dorind sa promoveze proactivitatea, dezvoltarea personala si sociala.
-            </div>
-        </div>
-        </br>
-        </br>
-        <div class="row">
-            <div class="col-xl-12 align-center text-white pb-4">
-                ASII
-                <i class="fa fa-copyright"></i> 2018
+    </div>
 
 
-            </div>
-        </div>
+</div>
 
-
+<script src="js/header.js"></script>
+<script src="js/slider2019.js"></script>
 </body>
-
-
 
 
 </html>
