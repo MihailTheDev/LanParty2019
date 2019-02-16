@@ -468,37 +468,39 @@ a:hover {
           border-right: 2px solid #00ebd9; }
         .navbar__info__details__item span {
           padding: 0 10px; }
-  .navbar__links--main {
-    display: flex;
-    align-items: center; }
-    .navbar__links--main a:not(:last-child) {
-      margin: 0 10px; }
-    .navbar__links--main__link {
-      color: #00ebd9;
-      font-weight: 600; }
-      .navbar__links--main__link:hover {
-        color: #00b8aa; }
-    .navbar__links--main__button {
-      border: 2px solid transparent;
-      border-image: linear-gradient(90deg, #00ebd9, rgba(0, 235, 217, 0.5));
-      border-image-slice: 1;
-      padding: 10px 16px;
-      color: #00ebd9;
-      transition: all .2s ease-in-out;
-      font-weight: bold; }
-      .navbar__links--main__button:hover {
-        border-image: none;
-        border-color: #00ebd9;
-        color: #00b8aa;
-        transition: all .2s ease-in-out; }
-    @media only screen and (max-width: 1199px) {
-      .navbar__links--main {
-        display: none; } }
-  .navbar__links--burger {
-    display: none; }
-    @media only screen and (max-width: 1199px) {
-      .navbar__links--burger {
-        display: block; } }
+  .navbar__links {
+    z-index: 50; }
+    .navbar__links--main {
+      display: flex;
+      align-items: center; }
+      .navbar__links--main a:not(:last-child) {
+        margin: 0 10px; }
+      .navbar__links--main__link {
+        color: #00ebd9;
+        font-weight: 600; }
+        .navbar__links--main__link:hover {
+          color: #00b8aa; }
+      .navbar__links--main__button {
+        border: 2px solid transparent;
+        border-image: linear-gradient(90deg, #00ebd9, rgba(0, 235, 217, 0.5));
+        border-image-slice: 1;
+        padding: 10px 16px;
+        color: #00ebd9;
+        transition: all .2s ease-in-out;
+        font-weight: bold; }
+        .navbar__links--main__button:hover {
+          border-image: none;
+          border-color: #00ebd9;
+          color: #00b8aa;
+          transition: all .2s ease-in-out; }
+      @media only screen and (max-width: 1199px) {
+        .navbar__links--main {
+          display: none; } }
+    .navbar__links--burger {
+      display: none; }
+      @media only screen and (max-width: 1199px) {
+        .navbar__links--burger {
+          display: block; } }
 
 .mobile-navbar {
   position: fixed;
