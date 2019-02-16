@@ -13,9 +13,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   </body>
+    
+    <link rel="stylesheet" href="css/slider2019.css">
     <title>Lan Party</title>
     <script src="js/header.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/slider2019.js"></script>
 </head>
 
 <body>
@@ -52,512 +63,146 @@
             </div>
         </div>
 
-
-        <div class="row">
-            <div class="slider pb-5">
-                <input type="radio" name="slide_switch" id="id1" checked="checked" />
-                <label for="id1"> <img src="build/img/cs.png" height="35" class="my-auto" /> </label>
-
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <div class="carousel-indicator  ">
+                <img class="selected" data-target="#myCarousel" data-slide-to="0" onclick="addSelected(this)" src="./css/img/cs.jpg">
+                <img  data-target="#myCarousel" data-slide-to="1" onclick="addSelected(this)" src="./css/img/lol.jpg">
+                <img   data-target="#myCarousel" data-slide-to="2" onclick="addSelected(this)" src="./css/img/rl.jpg">
+                <img   data-target="#myCarousel" data-slide-to="3" onclick="addSelected(this)" src="./css/img/dota.jpg">
+                 <img   data-target="#myCarousel" data-slide-to="4" onclick="addSelected(this)" src="./css/img/fifa.jpg">
+                <img   data-target="#myCarousel" data-slide-to="5" onclick="addSelected(this)" src="./css/img/smite.jpg">
+              <img  data-target="#myCarousel" data-slide-to="6" onclick="addSelected(this)" src="./css/img/hs.jpg">
+            </div>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="item-content">
+                 <p> Counter Strike Global Ofensive</p>
                             <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li> Formatul echipelor este 5 vs 5 (Team Play, 5 jucători în fiecare echipă). Rundele vor fi
+                                    <li> Formatul echipelor este 5 vs 5 (Team Play, 5 jucători în fiecare echipă). Rundele vor fi
                                     în număr de 30 (15 runde la Terro și 15 runde la Counter-Terro).</li>
-                                <li> Condițiia de victorie este prima echipă care câștigă 16 runde.</li>
-                                <li>în caz de remiză (15-15) vor fi 6 runde suplimentare, 3 runde Terro si 3 runde Counter-Terro,
+                                    <li> Condițiia de victorie este prima echipă care câștigă 16 runde.</li>
+                                    <li>în caz de remiză (15-15) vor fi 6 runde suplimentare, 3 runde Terro si 3 runde Counter-Terro,
                                     repetându-se procesul până nu mai este remiză. </li>
-                                <li> Timpul unei runde este de 2 minute.</li>
-                                <li> Membrii unei echipe pot comunica între ei oricând, full ghost talking este acceptat. </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                <li>Boosting (accesarea zonelor din hartă prin ”pășirea” pe alți jucători) este permis atâta
+                                    <li> Timpul unei runde este de 2 minute.</li>
+                                    <li> Membrii unei echipe pot comunica între ei oricând, full ghost talking este acceptat. </li>
+                                    <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                                    <li>Boosting (accesarea zonelor din hartă prin ”pășirea” pe alți jucători) este permis atâta
                                     timp cât nu reprezintă un exploit (ex. Din unchiul respectiv se poate vedea prin pereți).</li>
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
+                                    </ol>
+                               
                 </div>
-                <!--Lets show the second image by default on page load-->
-                <input type="radio" name="slide_switch" id="id2" />
-                <label for="id2"> <img src="build/img/lol5V5.png" height="35" class="my-auto " /> </label>
-
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3. </li>
-                                <li> Fiecare echipă va fi formată din 5 jucatori. </li>
-                                <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori. </li>
-                                <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu excepția problemelor
-                                    tehnice.
-                                </li>
-                                <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind permise meciurile
-                                    în handicap numeric( ex. 4v5, 3v5 etc.)
-                                </li>
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <input type="radio" name="slide_switch" id="id3" />
-                <label for="id3"> <img src="build/img/rl.png" height="35" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și primilor 2 studenți
-                                    de la altă facultate.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li> Fiecare jucător va avea ocazia să se joace cu fiecare dintre ceilalți jucători. </li>
-                                <li> Rundele vor fi numai de tipul 1v1.</li>
-                                <li>La sfârșitul unei runde, câștigătorul va primi un punct. Acest lucru va fi constatat de către
-                                    un voluntar. </li>
-                                <li> Ordinea jucătorilor în clasament va fi invers proporțională cu numărul de puncte acumulate.</li>
-                                <li> în caz de egalitate în clasament, se va relua sistemul cu punctele numai pentru jucătorii
-                                    în cauză.</li>
-                                <li> Pauzele nu sunt permise în timpul unei runde.</li>
-                                <li>în caz de dificultăți tehnice neașteptate, jucătorii pot cere refacerea rundei. </li>
-                                <li>Orice tentativă de fraudă va duce la descalificarea imediată a jucătorului/jucătorilor. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <input type="radio" name="slide_switch" id="id4" />
-                <label for="id4"> <img src="build/img/dota.png" height="35" class="my-auto" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li> Formatul echipelor este 5 vs 5 ( 5 jucători de echipă). </li>
-                                <li> Modul de joc este captains mode.</li>
-                                <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori. </li>
-                                <li> Formatul este double elimination.</li>
-                                <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                <li>Se permite comunicarea între membrii unei echipe.
-                                </li>
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <input type="radio" name="slide_switch" id="id5" />
-                <label for="id5"> <img src="build/img/fifa.svg" height="35" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li> Modul de joc va fi pe sistem de grupe. (3 pct victoria, 1 pct egal, 0 pct infrangerea) </li>
-                                <li> In functie de numarul de participanti, primii 2 sau 3 din fiecare grupa vor trece mai departe.
+              </div>
+          
+              <div class="item">
+                    <div class="item-content">
+                <p> League of Legends 5v5</p>
+                <ol class="font-18">
+                        <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3. </li>
+                        <li> Fiecare echipă va fi formată din 5 jucatori. </li>
+                        <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori. </li>
+                        <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu excepția problemelor
+                        tehnice.
+                        </li>
+                        <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
+                        </li>
+                        <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                        <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind permise meciurile
+                        în handicap numeric( ex. 4v5, 3v5 etc.)
+                        </li>
+                </ol>
+              </div></div>
+              
+              <div class="item">
+                    <div class="item-content">
+                <p> Rocket League</p>
+                <ol start="1" class="font-18">
+                        <li> Fiecare jucător va avea ocazia să se joace cu fiecare dintre ceilalți jucători. </li>
+                        <li> Rundele vor fi numai de tipul 1v1.</li>
+                        <li>La sfârșitul unei runde, câștigătorul va primi un punct. Acest lucru va fi constatat de către
+                        un voluntar. </li>
+                        <li> Ordinea jucătorilor în clasament va fi invers proporțională cu numărul de puncte acumulate.</li>
+                        <li> în caz de egalitate în clasament, se va relua sistemul cu punctele numai pentru jucătorii
+                        în cauză.</li>
+                        <li> Pauzele nu sunt permise în timpul unei runde.</li>
+                        <li>în caz de dificultăți tehnice neașteptate, jucătorii pot cere refacerea rundei. </li>
+                        <li>Orice tentativă de fraudă va duce la descalificarea imediată a jucătorului/jucătorilor. </li>
+                     </ol>
+              </div></div>
+              <div class="item">
+                    <div class="item-content">
+                <p> Dota 2</p>
+                            <ol start="1" class="font-18">z
+                                    <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                                    <li>Se permite comunicarea între membrii unei echipe.
                                     </li>
-                                <li>In a doua etapa a competitiei, se va juca in sistem ladder de tip eliminatoriu. In fiecare
-                                    etapa in afara de cea finala, se va juca best of 3 iar finala best of 5
-                                </li>
-                                <li> Se va juca cu repriza de 6 minute la dificultate legendary cu game speed normal și match
-                                    conditions random.
-                                </li>
-                                <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                <li>îSe va juca cu Injuries on, offsides on, bookings on, handball off, iar controller : defending:
-                                    tactical defending.
-                                </li>
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <input type="radio" name="slide_switch" id="id6" />
-                <label for="id6"> <img src="build/img/smite.png" height="35" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
+                                </ol>
+              </div></div>
+              <div class="item">
+                    <div class="item-content">
+                <p> Fifa 2018</p>
                             <ol start="1" class="font-18">
+                                    <li> Modul de joc va fi pe sistem de grupe. (3 pct victoria, 1 pct egal, 0 pct infrangerea) </li>
+                                    <li> In functie de numarul de participanti, primii 2 sau 3 din fiecare grupa vor trece mai departe.
+                                    </li>
+                                    <li>In a doua etapa a competitiei, se va juca in sistem ladder de tip eliminatoriu. In fiecare
+                                    etapa in afara de cea finala, se va juca best of 3 iar finala best of 5
+                                    </li>
+                                    <li> Se va juca cu repriza de 6 minute la dificultate legendary cu game speed normal și match
+                                    conditions random.
+                                    </li>
+                                    <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
+                                     </li>
+                                    <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
+                                    <li>îSe va juca cu Injuries on, offsides on, bookings on, handball off, iar controller : defending:
+                                    tactical defending.
+                                    </li>
+                                    </ol>
+              </div></div>
+              <div class="item">
+                    <div class="item-content">
+                <p> Smite</p>
+                <ol start="1" class="font-18">
+                        <ol start="1" class="font-18">
                                 <li>Se va juca 1v1 pe mapa Joust. </li>
                                 <li> 4 banuri de fiecare la începutul meciului în chat.</li>
                                 <li>Selectarea unui campion banat duce la pierderea meciunui prin forfeit.</li>
                                 <li> Fiecare jucător va juca ce ceilalți primind 1 punct pentru victorie, la sfârșit primi 4 for
-                                    intra în semifinale.</li>
+                                intra în semifinale.</li>
                                 <li> Semifinalele și finala se vor juca best of 3.
                                 </li>
                                 <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <input type="radio" name="slide_switch" id="id7" />
-                <label for="id7"> <img src="build/img/lol1V1.png" height="35" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li> Modul de joc va fi ARAM blind pick cu banuri din lobby în chat.
-                                </li>
-                                <li> 3 banuri de fiecare jucător în modul următor, fiecare va scrie pe chat câte un campion pe
-                                    care vrea sa îl baneze pe rând.
-                                </li>
-                                <li>în champion select este interzisă selectarea campionilor banați, acest lucru duce la eliminare.
-                                </li>
-                                <li> Se va juca până la 100 de minioni sau primul turn sau first bood.
-                                </li>
-                                <li> Se permite maxim 10 minute de pauză în timpul unui meci.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-                                <li>Se poate întârzia maxim 10 minute.
-                                </li>
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <input type="radio" name="slide_switch" id="id8" />
-                <label for="id8"> <img src="build/img/hs.png" height="35" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Jucătorii își pot aduce perifericele proprii (Controller/Tastatură/Mouse). </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a 2 studenți de echipă
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
+                        </ol>
+              </div></div>
+              <div class="item">
+                    <div class="item-content">
+                <p> HeartStone</p>
+                <ol start="1" class="font-18">
+                        <ol start="1" class="font-18">
                                 <li> Modul de joc 5vs 5 tournament draft double elimination, cu finala best of 3. </li>
                                 <li> Fiecare echipă va fi formată din 5 jucatori. </li>
                                 <li>Fiecare echipă va avea un căpitan care va fi legătura dintre echipă si organizatori. </li>
                                 <li> Fiecare echipa are dreptul la maxim 10 minute de pauza în timpul jocului, cu excepția problemelor
-                                    tehnice.
+                                tehnice.
                                 </li>
                                 <li> în cazul în care un jucător întârzie, echipa are voie sa amâne jocul pentru maxim 10 minute.
                                 </li>
                                 <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
                                 <li>în cazul în care nu este toată echipa aceasta va pierde prin forfeit, ne fiind permise meciurile
-                                    în handicat numeric( ex. 4v5, 3v5 etc.)
+                                în handicat numeric( ex. 4v5, 3v5 etc.)
                                 </li>
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <input type="radio" name="slide_switch" id="id9" />
-                <label for="id9"> <img src="build/img/mk.png" height="35" /> </label>
-                <div class="container text-white">
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Regulament de ordine interioara:
-                        </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol class="font-18">
-                                <li> Modul de joc va fi pe sistem de grupe. </li>
-                                <li> Accesul este permis studenților de la Facultatea de Informatică Iași și a primilor 2 studenți
-                                    din afara facultății.</li>
-                                <li> Accesul în sală se va face pe bază de bilet. </li>
-                                <li> Studenții Facultății de Informatică Iași vor avea asupra lor carnetul de student. </li>
-                                <li> Jucătorii vor avea grijă de echipamentul utilizat.</li>
-                                <li> Jucătorii vor păstra un limbaj corespunzător, indiferent de tensiunea situației. </li>
-                                <li> Pentru orice problemă sau nelămurire, apelați la organizatori.</li>
-                                <li> Deconectarea intenționată a unui calculator în timpul meciului atrage după sine pierderea
-                                    meciului prin forfeit. </li>
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-
-                    <div class="row py-4">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-white mx-auto align-center font-24 left15">
-                            Modul de desfășurare a competiției </div>
-                    </div>
-                    <div class="row align-center">
-                        <div class="numer col-xl-11 col-lg-11 col-md-11 col-sm-11 col-11 mx-auto text-white line-height-50 align-justify">
-                            <ol start="1" class="font-18">
-                                <li>Modul de joc va fi pe sistem de grupe. </li>
-                                <li> Toate meciurile vor fi best of 3 cu excepția finalei care a fi best of 5. </li>
-                                <li>Prima semifinala se va disputa intre locul 1 din grupa A si locul 2 din grupa B, iar a 2-a
-                                    semifinala se va disputa intre locul 1 din grupa B si locul 2 din grupa A, finala jucandu-se
-                                    intre castigatorii semifinalelor.</li>
-                                <li>Se permite maxim 10 minute de pauză între 2 runde</li>
-                                <li> Se poate întârzia maxim 10 minute.
-                                </li>
-                                <li> Warm up 5 minute înainte de începerea propriu-zisă a competiției.</li>
-
-
-
-                            </ol>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
+                                </ol>
+              </div></div>
+              
             </div>
-        </div>
-    </div>
+          
+            
+          </div>
+        
+
+
     <!--
 We will make a slider with stylized thumbnails using CSS3
 The markup is very simple:
