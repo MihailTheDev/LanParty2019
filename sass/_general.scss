@@ -159,6 +159,9 @@ body {
       }
     }
     &__fun {
+      .row-map {
+        flex-wrap: unset !important;
+      }
       .row:last-child {
         display: flex;
         justify-content: space-between;
